@@ -10,9 +10,10 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class ActivityBuildersModule {
 
+    // Inject the listed modules into the activity
     @ContributesAndroidInjector(
             modules = {ImageViewModelsModule.class, ImageModule.class})
-    abstract ImageActivity contributeAuthActivity();
+    abstract ImageActivity contributeImageActivity();
 
 
 }

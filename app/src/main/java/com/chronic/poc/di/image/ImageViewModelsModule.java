@@ -14,5 +14,5 @@ public abstract class ImageViewModelsModule {
     @Binds
     @IntoMap
     @ViewModelKey(ImageViewModel.class)
-    public abstract ViewModel bindAuthViewModel(ImageViewModel viewModel);
+    public abstract ViewModel bindImageViewModel(ImageViewModel viewModel);
 }

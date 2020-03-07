@@ -9,7 +9,10 @@ import javax.inject.Provider;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-
+/**The current Dagger library cannot inject wiewmodels into views.
+ * This class provide a work around of this problem.
+ * more info at: https://www.techyourchance.com/dependency-injection-viewmodel-with-dagger-2/
+ * */
 public class ViewModelProviderFactory implements ViewModelProvider.Factory {
 
     private static final String TAG = "ViewModelProviderFactor";

@@ -9,6 +9,7 @@ import dagger.Provides;
 @Module
 public class ImageModule {
 
+    //This @Module @Provides the concrete class object. Static is best practice.
     @Provides
     static CameraService provideCameraService(){
         return new CameraService();

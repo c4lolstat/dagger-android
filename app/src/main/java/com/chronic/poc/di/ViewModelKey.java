@@ -9,6 +9,9 @@ import java.lang.annotation.Target;
 import androidx.lifecycle.ViewModel;
 import dagger.MapKey;
 
+/**
+ * This is a helper annotation to help construct the viewmodel map for the viewmodelfatory.
+ * */
 
 @Documented
 @Target({ElementType.METHOD})

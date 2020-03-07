@@ -26,6 +26,9 @@ import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProviders;
 import dagger.android.support.DaggerAppCompatActivity;
 
+/**
+ * Image Activity, currently this is the only activity that tha application is consist of.
+ * */
 public class ImageActivity extends DaggerAppCompatActivity {
 
     private static final String TAG = "ImageActivity";
@@ -42,6 +45,7 @@ public class ImageActivity extends DaggerAppCompatActivity {
     private SurfaceTexture surfaceTexture;
     private CameraService.CameraProperties cameraProperties;
 
+    // @Inject tell Dagger to inject object which where configured in
     @Inject
     CameraService cameraService;
 
